@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="col-12 text-center">
+    <form id="doneer">
+
+        <div class="stap">
+            <div class="titel">
+                <h3>Hoeveel wil je ons geven?</h3>
+            </div>
+            <div class="sectie">
+                <input class="checkbox-budget" id="budget-10" name="Bedrag" type="radio">
+                <label class="for-checkbox-budget" for="budget-10">
+                    <span data-hover="€10">€10</span>
+                </label>
+                <input class="checkbox-budget" id="budget-20" name="Bedrag" type="radio">
+                <label class="for-checkbox-budget" for="budget-20">
+                    <span data-hover="€20">€20</span>
+                </label>
+                <input class="checkbox-budget" id="budget-50" name="Bedrag" type="radio">
+                <label class="for-checkbox-budget" for="budget-50">
+                    <span data-hover="€50">€50</span>
+                </label>
+                <input checked class="checkbox-budget" id="budget-100" name="Bedrag" type="radio">
+                <label class="for-checkbox-budget" for="budget-100">
+                    <span data-hover="€100">€100</span>
+                </label>
+                <input class="checkbox-budget" id="budget-anders" name="Bedrag" type="radio">
+                <label class="for-checkbox-budget" for="budget-anders">
+                    <span data-hover="Anders">Anders</span>
+                </label>
+
+                <input class="form-control radio-inline" id="ander" step=".01" name="Bedrag" placeholder="Bedrag"
+                       type="number">
+
+            </div>
+        </div>
+
+        <div class="stap">
+            <div class="titel">
+                <h3>Hoe wil je ons helpen?</h3>
+            </div>
+            <div class="sectie">
+                <div class="alert alert-primary" role="alert">
+                    Bij een incasso moet je eerst een betaling voldoen van €0,01 en daarna wordt de incasso automatisch aangemaakt.
+                </div>
+                <div class="form-group">
+                    <input checked class="checkbox-budget" id="Maandelijks" name="Manier" type="radio">
+                    <label class="for-checkbox-budget manier" for="Maandelijks">
+                        <span data-hover="Maandelijkse incasso">Maandelijkse incasso</span>
+                    </label>
+                    <input class="checkbox-budget" id="Kwartaal" name="Manier" type="radio">
+                    <label class="for-checkbox-budget manier" for="Kwartaal">
+                        <span data-hover="Incasso per kwartaal">Incasso per kwartaal</span>
+                    </label>
+                    <input class="checkbox-budget" id="Jaarlijks" name="Manier" type="radio">
+                    <label class="for-checkbox-budget manier" for="Jaarlijks">
+                        <span data-hover="Jaarlijkse incasso">Jaarlijkse incasso</span>
+                    </label>
+                    <input class="checkbox-budget" id="Eenmalig" name="Manier" type="radio">
+                    <label class="for-checkbox-budget manier" for="Eenmalig">
+                        <span data-hover="Eenmalige betaling">Eenmalige betaling</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="stap">
+            <div class="titel">
+                <h3>Wat zijn <b>jouw gegevens?</b></h3>
+            </div>
+            <div class="sectie">
+                <div class="form-group anoniem">
+                    <label class="container">Ik wil anoniem doneren
+                        <input class="form-control" id="Anoniem" name="Anoniem" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="gegevens">
+                    <div class="form-group">
+                        <label for="Voornaam">Initialen</label>
+                        <input class="form-control" id="Voornaam" name="Voornaam" placeholder="Initialen" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="Achternaam">Achternaam</label>
+                        <input class="form-control" id="Achternaam" name="Achternaam" placeholder="Achternaam"
+                               type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">E-mailadres</label>
+                        <input class="form-control" id="Email" name="Email" placeholder="Email" type="email">
+                    </div>
+                </div>
+                <input id="betalen" class="betalen" type="submit" value="Doneren">
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="loader"></div>
+
+
+    </form>
+</div>
+
+
+
+</body>
+</html>
